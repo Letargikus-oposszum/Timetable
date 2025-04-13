@@ -3,12 +3,10 @@ import  * as Controllers from "../controllers/controller.js"
 
 const router =express.Router()
 
-
-
-//router.get('/', movieControllers.getMovie)
-//router.get('/:id', movieControllers.getMovieById)
-//router.post('/', movieControllers.createMovie)
-//router.put('/:id',movieControllers.updateMovie)
-//router.delete('/:id', movieControllers.deleteMovie)
+router.get('/', Controllers.getClass)
+router.get('/:id', Controllers.getClassById)
+router.post('/', Controllers.createClass)
+router.put('/:id',Controllers.updateClass)
+router.delete('/:id', Controllers.deleteClass)
 
 export default router
