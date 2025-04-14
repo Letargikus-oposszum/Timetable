@@ -1,6 +1,5 @@
 import express from "express"
-import  * as Controllers from "../controllers/controller.js"
-
+import * as Controllers from "../controllers/controllers.js"
 const router =express.Router()
 
 router.get('/', Controllers.getClass)
