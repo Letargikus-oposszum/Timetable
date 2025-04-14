@@ -12,7 +12,7 @@ const seed = async ()=> {
         {day:"Friday",classes:["Math","History","Geography","History","IT"],},
     ]
     
-    for (const entry of data){
+    for (const entry of classes){
         await db.run("INSERT INTO classes (day, class_list) VALUES (?, ?)", 
                     [entry.day,JSON.stringify(entry.classes)]);
     }
